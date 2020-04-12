@@ -1,0 +1,7 @@
+header {
+    display: flex;
+    flex-direction: row; 
+}
+.bg-dark {
+    background-color: #343a40!important;
+}

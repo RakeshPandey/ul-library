@@ -1,0 +1,14 @@
+.NavList {
+    color: rgba(255,255,255,0.5);
+}
+.NavList a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    padding: 8px 16px;
+    outline: none;
+}
+.NavList a:hover,
+.NavList a:active,
+.NavList a.active {
+    color: rgba(255,255,255,1);
+}

@@ -1,0 +1,14 @@
+.SiteLogo {
+    width: 150px;
+}
+
+.SiteLogo > h1 {
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 28px; 
+    margin: 8px;
+}
+
+.SiteLogo img {
+    height: 100%;
+}
