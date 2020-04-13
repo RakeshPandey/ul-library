@@ -1,8 +1,36 @@
 .Card {
-    border: 1px solid #343a40;
-    border-radius: 5px;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 8px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding-bottom: 16px;
 }
 .Card img {
     width: 100%;
+    height: 100px;
+    margin-bottom: 16px;
+}
+.Card p, .Card h5 {
+    margin: 0;
+}
+.Card p, .Card h5 {
+    padding: 0 16px 16px;
+}
+.Card a {
+    text-decoration: none;
+    color: #343a40;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    padding: 8px;
+    background: transparent;
+    display: inline-block;
+}
+.Card a:hover {
+    background: #343a40;
+    color: #fff;
 }

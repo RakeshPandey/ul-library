@@ -33,15 +33,27 @@ const items = [
         link: '',
         label: 'Go somewhere',
         class: 'btn-primary'
+    },
+    {
+        id: 4,
+        img: 'https://via.placeholder.com/500x150',
+        name: 'Card 4',
+        title: 'Card Title 4',
+        para: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+        link: '',
+        label: 'Go somewhere',
+        class: 'btn-primary'
     }
 ]
 
 class Cards extends Component {
     render() {
         return (
-            <ul className="Cards">
-                <Card list={items} />
-            </ul>
+            <div className="container">
+                <ul className="Cards">
+                    <Card list={items} />
+                </ul>
+            </div>
         )
     }
 }

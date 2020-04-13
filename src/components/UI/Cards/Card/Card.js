@@ -10,8 +10,8 @@ const card = (props) => {
             <li className="Card">
                 <img src={card.img} alt={card.name} />
                 <h5>{card.title}</h5>
-                <p>{card.title}</p>
-                <a href={card.link} className="btn">{card.label}</a>
+                <p>{card.para}</p>
+                <p><a href={card.link} className="btn">{card.label}</a></p>
             </li>
         )
     })
