@@ -7,7 +7,7 @@ const card = (props) => {
 
     const cardlist = props.list.map((card, index) => {
         return (
-            <li className="Card">
+            <li key={card.id} className="Card">
                 <img src={card.img} alt={card.name} />
                 <h5>{card.title}</h5>
                 <p>{card.para}</p>

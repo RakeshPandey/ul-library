@@ -1,10 +1,35 @@
 .Modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 300px;
-    background: #fff;
-    box-shadow: 0 30px 20px #999;
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 40%;
+    border: 1px solid #ccc;
     border-radius: 10px;
+    padding: 16px;
+    left: 30%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+.Show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.Hide {
+    opacity: 0;
+    transform: translateY(-100vh);
+}
+.Button {
+    margin: 16px 16px 16px 0;
+    color: #343a40;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    padding: 8px;
+    background: transparent;
+    display: inline-block;
+    cursor: pointer;
+}
+.CancelButton {
+    background: #343a40;
+    color: #fff;
 }
