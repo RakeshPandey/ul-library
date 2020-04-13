@@ -18,15 +18,19 @@ class Modal extends Component {
 
     showModalHandler = () => {
         this.setState({
-            showModal: !this.state.showModal;
+            showModal: true
         })
     }
 
     render () {
         return (
-            <Auxiliary>
+            <Auxiliary>                
                 <div className="container">
-                    Modal
+                   <p><a href="/">Modal</a></p> 
+                   <div className="Modal">
+                        <div className="ModalTitle"></div>
+                        <div className="ModalBody"></div>
+                   </div>
                 </div>
             </Auxiliary>
         );
