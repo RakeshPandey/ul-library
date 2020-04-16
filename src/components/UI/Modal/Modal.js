@@ -55,7 +55,7 @@ class Modal extends Component {
                         </p>
                     </div>
                 </div>
-                <p><a href="/" onClick={this.showModalHandler}>Modal</a></p>
+                <p><a href="#" onClick={this.showModalHandler}>Modal</a></p>
             </div>
         );
     }
