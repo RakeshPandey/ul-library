@@ -4,7 +4,6 @@ import Backdrop from '../Backdrop/Backdrop';
 import './Modal.css';
 
 class Modal extends Component {
-
     state = {
         data: {
             title: 'Modal Title',
@@ -31,20 +30,20 @@ class Modal extends Component {
         this.setState({
             showModal: false
         })
-       // window.location = "https://www.google.com"
-       alert('Please continue !!')
+        // window.location = "https://www.google.com"
+        alert('Please continue !!')
     }
 
-    render () {
+    render() {
 
         let attachedClasses = ['Modal', 'Hide']
-        if(this.state.showModal) {
+        if (this.state.showModal) {
             attachedClasses = ['Modal', 'Show']
         }
 
-        return (               
-            <div className="container"> 
-                <Backdrop show={this.state.showModal} hideModal={this.cancelModalHandler} /> 
+        return (
+            <div className="container">
+                <Backdrop show={this.state.showModal} hideModal={this.cancelModalHandler} />
                 <div className={attachedClasses.join(' ')} >
                     <div className="ModalTitle">{this.state.data.title}</div>
                     <div className="ModalBody">
@@ -52,11 +51,11 @@ class Modal extends Component {
                         <p>
                             <button className="Button CancelButton" onClick={this.cancelModalHandler}>{this.state.data.cancel}</button>
                             <button className="Button" onClick={this.continueModalHandler}>{this.state.data.continue}</button>
-                            
+
                         </p>
                     </div>
                 </div>
-                <p><a href="#" onClick={this.showModalHandler}>Modal</a></p>
+                <p><a href="/" onClick={this.showModalHandler}>Modal</a></p>
             </div>
         );
     }

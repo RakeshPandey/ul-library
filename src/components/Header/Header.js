@@ -15,7 +15,6 @@ class Header extends Component {
             { label: 'Services', link: '/services' },
             { label: 'Contact', link: '/contact' }
         ]
-
         return (
             <header className="bg-dark">
                 <div className="container">
