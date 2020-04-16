@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css";
 import Slider from "react-slick";
 import image from '../../../images/index'
-console.log(image)
+
 const photos = [
   {
     name: "Photo 1",
