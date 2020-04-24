@@ -16,7 +16,6 @@ code {
     width: 100%;
     margin: auto;
     display: flex;
-    position: relative;
 }
 @media (min-width: 576px) {
     .container {
@@ -36,5 +35,17 @@ code {
 @media (min-width: 1200px){
     .container {
         max-width: 1140px;
+    }
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+@media (min-width: 767px) {
+    .hide {
+        display: block;
     }
 }

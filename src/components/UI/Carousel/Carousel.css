@@ -1,15 +1,63 @@
-.SliderContainer {
-	background: antiquewhite;
-}
 .slick-slider {
-	height: 200px;
-	width: 90%;
-	margin: 0 5%;
+	height: auto;
+	width: 100%;
+	margin: 0;
 }
-.slick-list {
-	height: inherit;
+.slick-slide {
+	position: relative;
 }
 .slick-slider .slick-arrow {
-	height: 100%;
-	background: red;
+	width: 2.66667rem;
+	height: 2.66667rem;
+	color: #252a33;
+	background: #fff;
+	text-align: center;
+	transition: all .3s ease;
+	z-index: 100;
+}
+.slick-arrow::before {
+	color: #252a33;
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+.slick-prev {
+	left: 0;
+}
+.slick-next {
+	right: 0;
+}
+.slick-dots {
+	bottom: 15px;
+}
+.slick-dots li button:before {
+	font-size: 15px;
+}
+.description {
+	position: absolute;
+	right: 0;
+	top: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem;
+    padding-right: 5%;
+	max-width: 35%;
+	transform: translateY(-50%);
+	z-index: 100;
+}
+.description h2 {
+	font-size: 3.8rem;
+    line-height: 4.93333rem;
+	font-weight: 300;
+	margin: 0;
+}
+.description h4 {
+	font-size: .93333rem;
+    line-height: 1.33333rem;
+    font-weight: 400;
+}
+.description p {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
 }

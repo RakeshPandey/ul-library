@@ -1,6 +1,7 @@
 header {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    padding: 8px 0 6px;
 }
 .bg-dark {
     background-color: #343a40!important;

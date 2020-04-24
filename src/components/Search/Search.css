@@ -1,11 +1,16 @@
 .searchForm {
   position: absolute;
-  margin: auto;
+  margin: 0 auto;
   top: 0;
   right: 0;
-  bottom: 0;
   width: 200px;
   height: 100px;
+  display: none;
+}
+@media (min-width: 767px) {
+    .searchForm {
+        display: block;
+    }
 }
 .search {
     position: absolute;
