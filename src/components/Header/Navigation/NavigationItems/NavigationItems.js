@@ -14,6 +14,7 @@ const NavList = styled.ul`
     margin: 0;
     padding: 0;
     background: #343a40;
+    z-index: 1000;
     @media (min-width: 767px) {
         display: flex;
         flex-direction: row;

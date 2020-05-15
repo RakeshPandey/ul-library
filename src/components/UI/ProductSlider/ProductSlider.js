@@ -5,29 +5,57 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { Button } from '../../Elements/Button/Button';
 import { H2, H6, Para } from '../../Elements/Heading/Heading';
-import "./Carousel.css";
+//import "./Carousel.css";
 import image from '../../../images/index';
 
 const photos = [
   {
-    name: "Original Parts Quality",
+    title: "Original Parts Quality",
+    productId: 'sku00001',
+    tag: 'New',
     url: `${image.image1}`,
-    desc: 'Combining excellence in service with affordability and quality.'
+    price: '$150',
+    cart: 'icon'
   },
   {
-    name: "Hand Tools",
+    title: "Original Parts Quality",
+    productId: 'sku00002',
+    tag: 'New',
     url: `${image.image2}`,
-    desc: 'The products of our store are well-designed and very user-friendly. We are always in touch with the latest fashion and hi-tech tendencies.'
+    price: '$150',
+    cart: 'icon'
   },
   {
-    name: "The Lowest Prices",
+    title: "Original Parts Quality",
+    productId: 'sku00003',
+    tag: 'New',
     url: `${image.image3}`,
-    desc: 'We are dedicated to meeting the needs of our cliets, and that’s why offer high-quality electrical tools at the most affordable prices'
+    price: '$150',
+    cart: 'icon'
   },
   {
-    name: "Original Parts Quality",
+    title: "Original Parts Quality",
+    productId: 'sku00004',
+    tag: 'New',
     url: `${image.image4}`,
-    desc: 'Combining excellence in service with affordability and quality.'
+    price: '$150',
+    cart: 'icon'
+  },
+  {
+    title: "Original Parts Quality",
+    productId: 'sku00005',
+    tag: 'New',
+    url: `${image.image1}`,
+    price: '$150',
+    cart: 'icon'
+  },
+  {
+    title: "Original Parts Quality",
+    productId: 'sku00001',
+    tag: 'New',
+    url: `${image.image1}`,
+    price: '$150',
+    cart: 'icon'
   }
 ]
 
@@ -37,7 +65,7 @@ class Carousel extends Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 4,
       slidesToScroll: 1,
       className: "slides"
     };

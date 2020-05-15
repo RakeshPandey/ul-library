@@ -35,29 +35,25 @@
 }
 .description {
 	position: absolute;
-	right: 0;
+	right: 1.66667rem;
 	top: 40%;
+	transform: translateY(-50%);
 	display: flex;
 	flex-wrap: wrap;
 	padding: 1rem;
-    padding-right: 5%;
 	max-width: 35%;
-	transform: translateY(-50%);
 	z-index: 100;
+	padding-right: 5%;
 }
-.description h2 {
-	font-size: 3.8rem;
-    line-height: 4.93333rem;
-	font-weight: 300;
-	margin: 0;
+.description h6, .description p  {
+	display: none !important;
 }
-.description h4 {
-	font-size: .93333rem;
-    line-height: 1.33333rem;
-    font-weight: 400;
-}
-.description p {
-	display: flex;
-	flex-flow: column;
-	width: 100%;
+@media (min-width: 767px) {
+	.description {
+		max-width: 35%;
+		top: 45%;
+	}
+	.description h6, .description p  {
+		display: block !important;
+	}
 }

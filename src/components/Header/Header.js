@@ -8,7 +8,7 @@ import Hamburger from '../Header/Navigation/Hamburger';
 
 // import './Header.css';
 
-const HeaderP = styled.header`
+const MainHeader = styled.header`
     display: flex;
     flex-direction: row;
     padding: 8px 0 6px;
@@ -37,14 +37,14 @@ class Header extends Component {
             { label: 'Contact', link: '/contacts' }
         ]
         return (
-            <HeaderP className="bg-dark">
+            <MainHeader className="bg-dark">
                 <div className="container">
                     <Logo />
                     <NavigationItems show={this.state.showMenu} links={menuList} />
                     <Search />
                     <Hamburger clicked={this.showClickedHandler} />
                 </div>
-            </HeaderP>
+            </MainHeader>
         );
     }
 }
